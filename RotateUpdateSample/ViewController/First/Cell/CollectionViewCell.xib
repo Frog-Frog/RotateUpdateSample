@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="RotateUpdateSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1by-jq-0Rc">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LMN-ql-JhD">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LMN-ql-JhD" firstAttribute="top" secondItem="1by-jq-0Rc" secondAttribute="top" id="8WP-SG-xy9"/>
+                            <constraint firstAttribute="trailing" secondItem="LMN-ql-JhD" secondAttribute="trailing" id="MFk-0L-gkX"/>
+                            <constraint firstItem="LMN-ql-JhD" firstAttribute="leading" secondItem="1by-jq-0Rc" secondAttribute="leading" id="umT-Nr-P7Q"/>
+                            <constraint firstAttribute="bottom" secondItem="LMN-ql-JhD" secondAttribute="bottom" id="uwR-7S-FoP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="1by-jq-0Rc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0cg-WW-Pjl"/>
+                <constraint firstAttribute="trailing" secondItem="1by-jq-0Rc" secondAttribute="trailing" id="B06-wk-sxl"/>
+                <constraint firstAttribute="bottom" secondItem="1by-jq-0Rc" secondAttribute="bottom" id="ITQ-bu-CeV"/>
+                <constraint firstItem="1by-jq-0Rc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SUQ-ch-2vp"/>
+            </constraints>
+            <connections>
+                <outlet property="colorView" destination="1by-jq-0Rc" id="Ae2-jz-UOx"/>
+                <outlet property="countLabel" destination="LMN-ql-JhD" id="Zxx-ol-cvx"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
